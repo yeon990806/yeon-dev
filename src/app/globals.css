@@ -10,3 +10,7 @@
 * {
   @apply transition-colors duration-100;
 }
+
+.error {
+  height: calc(100vh - 72px - 90px);
+}

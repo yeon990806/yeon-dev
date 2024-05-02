@@ -1,6 +1,8 @@
 'use client'
-import { initializeTheme } from "@/store/theme"
 import { ReactNode, useLayoutEffect } from "react"
+import { initializeTheme } from "@/store/theme"
+import { KBarAnimator, KBarPortal, KBarPositioner, KBarProvider, KBarSearch } from "kbar";
+import { SHORTCUT } from "@/libs/shortcut";
 
 interface ClientRootConatinerProps {
   children: ReactNode
@@ -14,6 +16,15 @@ const ClientRootConatiner = ({
   }, [])
   return (
     <>
+      <KBarProvider actions={SHORTCUT}>
+        <KBarPortal>
+          <KBarPositioner>
+            <KBarAnimator>
+              <KBarSearch />
+            </KBarAnimator>
+          </KBarPositioner>
+        </KBarPortal>
+      </KBarProvider>
       { children }
     </>
   )

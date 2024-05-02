@@ -1,5 +1,3 @@
-import { DefaultSeoProps } from 'next-seo';
-
 export const siteConfig = {
   url: 'https://yeon990806.github.io',
   title: 'yeon.dev',
@@ -12,10 +10,10 @@ export const siteConfig = {
     photo: '',
     bio: '',
     contacts: {
-      email: 'bepyan@naver.com',
-      github: 'bepyan',
-      twitter: '__pyungan',
-      velog: '@bepyan',
+      email: 'yeon990806@gmail.com',
+      github: 'yeon990806',
+      twitter: '',
+      velog: '',
       linkedin: '',
       youtube: '',
       instagram: '',
@@ -37,7 +35,7 @@ export const siteConfig = {
   ],
 };
 
-export const seoConfig: DefaultSeoProps = {
+export const seoConfig = {
   title: siteConfig.title,
   description: siteConfig.description,
   canonical: siteConfig.url,
